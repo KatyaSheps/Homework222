@@ -19,7 +19,6 @@
         </activity>
 
         <activity android:name=".NotesActivity"/>
-        <activity android:name="ru.sheps.android.homework222.MainActivity" />
     </application>
 
 </manifest>
