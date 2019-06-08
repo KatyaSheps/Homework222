@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.netodologia.lessons.R;
-
 
 public class NotesActivity extends AppCompatActivity{
 
@@ -51,9 +49,6 @@ public class NotesActivity extends AppCompatActivity{
         });
 
     }
-
-
-
 
     private void getDateFromSharedPref(){
         String noteTxt = myNoteSharedPref.getString(NOTE_TEXT, "");

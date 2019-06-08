@@ -8,8 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.netodologia.lessons.R;
-
 public class MainActivity extends  AppCompatActivity {
 
     @Override
@@ -18,8 +16,7 @@ public class MainActivity extends  AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar myToolBar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolBar);
-        Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
-        startActivity(intentNotes);
+
 
     }
 
@@ -36,7 +33,13 @@ public class MainActivity extends  AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_open_notes) {
-            Toast.makeText(MainActivity.this, "Отркыть записную книжку", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
+        if (id == R.id.action_callendar) {
+            Intent intentNotes = new Intent(MainActivity.this, CallendarActivity.class);
+            startActivity(intentNotes);
             return true;
         }
 

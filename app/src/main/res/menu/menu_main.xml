@@ -14,4 +14,10 @@
         android:orderInCategory="100"
         android:title="Записная книжка"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_callendar"
+        android:orderInCategory="100"
+        android:title="Календарь"
+        app:showAsAction="never" />
 </menu>
