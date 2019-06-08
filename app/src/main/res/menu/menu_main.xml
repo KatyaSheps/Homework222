@@ -22,6 +22,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/action_open_pay"
+        android:orderInCategory="100"
+        android:title="Оплатить"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_callendar"
         android:orderInCategory="100"
         android:title="Календарь"

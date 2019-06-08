@@ -48,6 +48,11 @@ public class MainActivity extends  AppCompatActivity {
             startActivity(intentNotes);
             return true;
         }
+        if (id == R.id.action_open_pay) {
+            Intent intentNotes = new Intent(MainActivity.this, PayActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
