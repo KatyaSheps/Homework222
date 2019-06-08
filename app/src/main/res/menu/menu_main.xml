@@ -16,6 +16,12 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/action_open_adress"
+        android:orderInCategory="100"
+        android:title="Адреса"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_callendar"
         android:orderInCategory="100"
         android:title="Календарь"

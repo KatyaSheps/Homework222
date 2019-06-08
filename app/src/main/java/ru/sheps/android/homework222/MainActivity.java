@@ -43,6 +43,12 @@ public class MainActivity extends  AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_open_adress) {
+            Intent intentNotes = new Intent(MainActivity.this, AdressActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
